@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Iframe Document</title>
+    <style>
+      #menu div {
+        background-color: orangered;
+
+        padding: 10px;
+        margin-bottom: 30px;
+        text-align: center;
+      }
+      a {
+        color: white;
+        text-decoration: none;
+      }
+      .container {
+        display: flex;
+      }
+      #menu {
+        flex: 1;
+        padding: 5px;
+        border-right: 2px solid black;
+      }
+      #iframe {
+        flex: 4;
+      }
+      iframe {
+        padding: 5px;
+        width: 100%;
+        height: 100vh;
+        border: none;
+      }
+.navbar {
+  position: fixed;
+  top: 0%;
+  box-shadow: 0px 0px 8px rgb(0 0 0 / 6%);
+  width: 100%;
+  background-color:black;
+}
+ul {
+  list-style-type: none;
+  font-family: "Lato", sans-serif;
+  font-weight: 600;
+  margin-top: 0%;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  padding: 25px;
+  background-color:black;
+  text-decoration: none;
+  color: cornsilk;
+}
+    </style>
+  </head>
+  <body>
+    
+    <div class="container">
+      <div class="navbar">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About Me</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div id="menu">
+        <div>
+          <a href="tvimg.html" target="rightPanel">Mobile </a>
+        </div>
+
+        <div>
+          <a href="tvimg.html" target="rightPanel">TV</a>
+        </div>
+        <div>
+          <a href="tvimg.html" target="rightPanel">Laptop</a>
+        </div>
+        <div>
+          <a href="tvimg.html " target="rightPanel">Cloths</a>
+        </div>
+        <div>
+          <a href="tvimg.html" target="rightPanel">Watch</a>
+        </div>
+      </div>
+
+      <div id="iframe">
+        <iframe name="rightPanel" > </iframe>
+      </div>
+    </div>
+  </body>
+</html>
